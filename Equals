@@ -1,1 +1,23 @@
+package com.jspider.ObjectClass;
+
+class Employe{
+	private int a=10;
+			@Override
+			public boolean equals(Object obj) {
+		Employe e = (Employe)obj;
+		if(this.a==e.a) {
+			return true;
+		}
+		else {
+			return false;
+		}
+			}
+}
+public class Equals {
+	public static void main(String []args) {
+		Employe e1 = new Employe();
+		Employe e2 = new Employe();
+		System.out.println(e1.equals(e2));
+	}	
+}
 
