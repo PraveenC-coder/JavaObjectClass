@@ -1,0 +1,26 @@
+package com.jspider.ObjectClass;
+
+class string1{
+	String str1 ="praveen";
+	public String toString() {
+	return str1;
+	}
+}
+class string2{
+	String str2="praveen";
+	@Override
+	public String toString() {
+	return str2;
+	}
+}
+
+public class ToString {
+	
+	public static void main(String []args) {
+		string1 s1=new string1();
+		System.out.println(s1.toString());
+		string2 s2 = new string2();
+		System.out.println(s2.toString());
+	}
+
+}
