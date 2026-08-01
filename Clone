@@ -1,0 +1,26 @@
+package com.jspider.questions;
+
+public class Program2  implements Cloneable{
+	int highscore = 100;
+	
+	static void createcopy () throws CloneNotSupportedException{
+		
+		Program2 original = new Program2();
+		original.highscore=5000;
+		Program2 copy= (Program2)original.clone();
+		System.out.println(copy.highscore);
+	}
+	public static void main(String [] args) {
+
+		
+		try {
+			System.out.println("try startd");
+			createcopy();
+		}
+		catch(CloneNotSupportedException e){
+			System.out.println("exception handling");
+			
+		}
+	}
+
+}
